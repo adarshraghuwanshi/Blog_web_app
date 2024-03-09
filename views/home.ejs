@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  
+    <h1> Create New Post</h1>
+    <form action="/submit" method="POST">
+      <input type="text" name="topic" placeholder="Topic" required><br>
+      <input type="text" name="content" placeholder="Content" required><br>
+      <input type="submit" value="OK"><br>
+    </form>
+    <BR>
+       
+        <%if(locals.posts){%>
+        <% posts.forEach(post => { %>
+          <!-- <form action="/send" method="GET">
+          <a href="blog.ejs" type="send"><li><%= post.title %> - <%= post.content %> </li> </a>
+          </form> -->
+          <!-- <form action="/send" method="GET"> -->
+            <a href="/send?id=<%= post.id %>" >
+                <li><%= post.topic %> </li>
+            </a>
+        <!-- </form> -->
+
+      <% }); }%> 
+  
+     
+     
+</body>
+</html>
