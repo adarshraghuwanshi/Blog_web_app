@@ -1,0 +1,91 @@
+/* public/css/style.css */
+/*body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color :rgb(81, 37, 37);
+    
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input {
+    border: 2px solid rgb(0, 255, 17);
+}*/
+/* Add more styles as needed for a better user experience */
+/*#text {
+    padding: 0.5cm;
+    
+}*/
+
+
+/* / Reset some default styles and provide a clean slate/ */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;}
+/* Apply a simple, elegant font to the entire page */
+body{
+
+font-family: 'Arial', sans-serif;}
+/* Add subtle background color and center content / */
+html, body{
+height: 100%;
+background-color: #f0f0f0;
+display: grid;
+justify-content: center;
+align-items: center;}
+
+/* Style Links with a different color and remave underlines */
+a{
+text-decoration: none;
+color: #007BFF;}
+/* / Create a responsive, centered container / */
+.container{
+max-width: πόθμα;
+margin: auto;
+padding: 20px;
+background-color: #fff;
+box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+border-radius: 5px;}
+
+/* Style buttons with modern look / */
+button 
+{
+background-color: #007BFF;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 8.3s;
+}
+
+button:hover {
+background-color: #005663;
+}
+/* Add responsive design for mobile devices */
+@media (max-width: 768px) {
+.container {padding: 10px;
+}
+button{
+padding: 1px 16px;
+}
+}
+/* / Highlight taportant elesents with a soft shadow/ */
+.highlight {
+box-shadow: 5px rgba(8, 6, 8, 8.2);
+}

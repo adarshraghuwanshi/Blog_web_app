@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color :rgb(81, 37, 37);
+    
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input {
+    border: 2px solid rgb(0, 255, 17);
+}
+Add more styles as needed for a better user experience */
+#text {
+    padding: 0.5cm;
+    
+}
+    </style>
 </head>
 <body>
     <a href="/home">HOME</a>
@@ -14,6 +47,8 @@
         
         <h1> <b> Title:</b> <%= posts[Number(id)].topic %></h1>
         <h2><b> Content:</b> <%= posts[Number(id)].content %></h2>
+        <button> Delete</button>
+        <button>Update</button>
     <% } %>
     
       

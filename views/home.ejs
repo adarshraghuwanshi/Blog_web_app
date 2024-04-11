@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <title>Lisper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 <body>
 
   
-    <h1> Create New Post</h1>
+    <h1 class="main"> My Blogs</h1>
     <form action="/submit" method="POST">
-      <input type="text" name="topic" placeholder="Topic" required><br>
-      <input type="text" name="content" placeholder="Content" required><br>
+      <input id="text" type="text" name="topic" placeholder="Topic" required><br>
+      <input id="content" type="text" name="content" placeholder="Content" required><br>
       <input type="submit" value="OK"><br>
     </form>
     <BR>
@@ -25,6 +28,7 @@
             <a href="/send?id=<%= post.id %>" >
                 <li><%= post.topic %> </li>
             </a>
+            
         <!-- </form> -->
 
       <% }); }%> 
